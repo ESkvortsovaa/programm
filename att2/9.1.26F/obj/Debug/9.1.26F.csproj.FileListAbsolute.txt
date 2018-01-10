@@ -1,0 +1,12 @@
+C:\Users\asus\source\repos\att2\9.1.26F\bin\Debug\9.1.26F.exe.config
+C:\Users\asus\source\repos\att2\9.1.26F\bin\Debug\9.1.26F.exe
+C:\Users\asus\source\repos\att2\9.1.26F\bin\Debug\9.1.26F.pdb
+C:\Users\asus\source\repos\att2\9.1.26F\bin\Debug\BL.dll
+C:\Users\asus\source\repos\att2\9.1.26F\bin\Debug\BL.pdb
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\9.1.26F.csprojResolveAssemblyReference.cache
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\_9._1._26F.Form1.resources
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\_9._1._26F.Properties.Resources.resources
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\9.1.26F.csproj.GenerateResource.Cache
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\9.1.26F.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\9.1.26F.exe
+C:\Users\asus\source\repos\att2\9.1.26F\obj\Debug\9.1.26F.pdb

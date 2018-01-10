@@ -1,0 +1,6 @@
+C:\Users\asus\source\repos\att2\9.2.26C\bin\Debug\9.2.26C.exe.config
+C:\Users\asus\source\repos\att2\9.2.26C\bin\Debug\9.2.26C.exe
+C:\Users\asus\source\repos\att2\9.2.26C\bin\Debug\9.2.26C.pdb
+C:\Users\asus\source\repos\att2\9.2.26C\obj\Debug\9.2.26C.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\att2\9.2.26C\obj\Debug\9.2.26C.exe
+C:\Users\asus\source\repos\att2\9.2.26C\obj\Debug\9.2.26C.pdb
