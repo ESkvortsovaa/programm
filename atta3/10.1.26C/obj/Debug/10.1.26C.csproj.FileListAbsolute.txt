@@ -1,0 +1,7 @@
+C:\Users\asus\source\repos\atta3\10.1.26C\bin\Debug\10.1.26C.exe.config
+C:\Users\asus\source\repos\atta3\10.1.26C\bin\Debug\10.1.26C.exe
+C:\Users\asus\source\repos\atta3\10.1.26C\bin\Debug\10.1.26C.pdb
+C:\Users\asus\source\repos\atta3\10.1.26C\obj\Debug\10.1.26C.csprojResolveAssemblyReference.cache
+C:\Users\asus\source\repos\atta3\10.1.26C\obj\Debug\10.1.26C.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\atta3\10.1.26C\obj\Debug\10.1.26C.exe
+C:\Users\asus\source\repos\atta3\10.1.26C\obj\Debug\10.1.26C.pdb

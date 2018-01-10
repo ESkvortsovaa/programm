@@ -1,0 +1,5 @@
+C:\Users\asus\source\repos\atta3\10.1.26F\obj\Debug\10.1.26F.csprojResolveAssemblyReference.cache
+C:\Users\asus\source\repos\atta3\10.1.26F\obj\Debug\_10._1._26F.Form1.resources
+C:\Users\asus\source\repos\atta3\10.1.26F\obj\Debug\_10._1._26F.Properties.Resources.resources
+C:\Users\asus\source\repos\atta3\10.1.26F\obj\Debug\10.1.26F.csproj.GenerateResource.Cache
+C:\Users\asus\source\repos\atta3\10.1.26F\obj\Debug\10.1.26F.csproj.CoreCompileInputs.cache
