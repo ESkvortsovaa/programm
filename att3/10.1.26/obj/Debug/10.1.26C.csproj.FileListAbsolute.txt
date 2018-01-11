@@ -1,0 +1,9 @@
+C:\Users\asus\Desktop\form\10.1.26\bin\Debug\10.1.26.exe.config
+C:\Users\asus\Desktop\form\10.1.26\bin\Debug\10.1.26.exe
+C:\Users\asus\Desktop\form\10.1.26\bin\Debug\10.1.26.pdb
+C:\Users\asus\Desktop\form\10.1.26\bin\Debug\BL.dll
+C:\Users\asus\Desktop\form\10.1.26\bin\Debug\BL.pdb
+C:\Users\asus\Desktop\form\10.1.26\obj\Debug\10.1.26C.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\form\10.1.26\obj\Debug\10.1.26C.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\form\10.1.26\obj\Debug\10.1.26.exe
+C:\Users\asus\Desktop\form\10.1.26\obj\Debug\10.1.26.pdb

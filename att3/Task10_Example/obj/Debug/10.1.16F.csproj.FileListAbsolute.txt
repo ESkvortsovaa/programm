@@ -1,0 +1,12 @@
+C:\Users\asus\Desktop\form\Task10_Example\bin\Debug\Task10_Example.exe.config
+C:\Users\asus\Desktop\form\Task10_Example\bin\Debug\Task10_Example.exe
+C:\Users\asus\Desktop\form\Task10_Example\bin\Debug\Task10_Example.pdb
+C:\Users\asus\Desktop\form\Task10_Example\bin\Debug\BL.dll
+C:\Users\asus\Desktop\form\Task10_Example\bin\Debug\BL.pdb
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\10.1.16F.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\Task10_Example.Form.resources
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\Task10_Example.Properties.Resources.resources
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\10.1.16F.csproj.GenerateResource.Cache
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\10.1.16F.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\Task10_Example.exe
+C:\Users\asus\Desktop\form\Task10_Example\obj\Debug\Task10_Example.pdb
