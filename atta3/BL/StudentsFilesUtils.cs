@@ -19,11 +19,12 @@ namespace BL
             {
                 string[] parts = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                string name = parts[0] + " " + parts[1];
-                int group = int.Parse(parts[2]);
-                int department = int.Parse(parts[3]);
+                string name = parts[0] + " " + parts[1]+ " "  + parts[2];
+                int gender = int.Parse(parts[3]);
+                int course = int.Parse(parts[4]);
+                int score = int.Parse(parts[5]);
 
-                studentsList.Add(new Student(name, group, department));
+                studentsList.Add(new Student(name, gender, course, score));
             }
 
             return studentsList;
@@ -35,7 +36,7 @@ namespace BL
 
             foreach (Student student in students)
             {
-                lines.Add(student.Name + " " + student.Group);
+                lines.Add(student.Name + student.Gender + student.Course+student.Score);
             }
 
             File.WriteAllLines(path, lines);

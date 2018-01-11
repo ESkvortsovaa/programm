@@ -45,40 +45,7 @@ namespace _10._1._26F
         {
             grid.Rows.Add();
         }
-
-        private void save_Click(object sender, EventArgs e)
-        {
-            int count = grid.Rows.Count - 1;
-
-            Students students = new Students();
-
-            for (int i = 0; i != count; i++)
-            {
-                students.People.Add(new Student(grid[0, i].Value.ToString(), int.Parse(grid[1, i].Value.ToString()), int.Parse(grid[2, i].Value.ToString()), int.Parse(grid[3, i].Value.ToString())));
-            }
-
-            if (save_name.Text.Length < 1)
-            {
-                MessageBox.Show("Введите название");
-                return;
-            }
-            students.Save(save_name.Text);
-            MessageBox.Show("Сохранено");
-        }
-
-        private void load_Click(object sender, EventArgs e)
-        {
-           
-           if (load_name.Text.Length < 1)
-             {
-                 MessageBox.Show("Введите название");
-                 return;
-             }
-             Students a = new Students(load_name.Text);
-             GenerateGridView(a);
-          
-        }
-
+              
         private void execute_Click(object sender, EventArgs e)
         {
             if (grants.Text.Length < 1)
@@ -111,20 +78,38 @@ namespace _10._1._26F
 
         private void openFileDialog1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    string path = openFileDialog1.FileName;
-
+                    string path = openFileDialog2.FileName;
                     List<Student> studentsList = StudentsFilesUtils.ReadStudentsListFromFile(path);
                     StudentsDGVConvert.StudentsListToDGV(grid, studentsList);
-
                     MessagesUtils.ShowMessage("Данные загружены из файла");
                 }
                 catch (Exception ex)
                 {
                     MessagesUtils.ShowError("Ошибка чтения из файла");
+                }
+            }
+        }
+
+        private void saveFileDialog1_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string path = saveFileDialog2.FileName;
+
+                    List<Student> studentsList = StudentsDGVConvert.DGVToStudentsList(grid);
+                    StudentsFilesUtils.SaveStudentsListInFile(path, studentsList);
+
+                    MessagesUtils.ShowMessage("Данные сохранены в файл");
+                }
+                catch (Exception ex)
+                {
+                    MessagesUtils.ShowError("Ошибка сохранения в файл");
                 }
             }
         }

@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace BL
 {
-   public class StudentsDGVConvert
+    public class StudentsDGVConvert
     {
 
         public static List<Student> DGVToStudentsList(DataGridView dgv)
@@ -16,11 +16,12 @@ namespace BL
 
             foreach (DataGridViewRow row in dgv.Rows)
             {
-                string name = row.Cells["InputStudentsDGV_Name"].Value.ToString();
-                int group = (int)Convert.ChangeType(row.Cells["InputStudentsDGV_Group"].Value, typeof(int));
-                int department = (int)Convert.ChangeType(row.Cells["InputStudentsDGV_Course"].Value, typeof(int));
+                string name = row.Cells["Name"].Value.ToString();
+                int gender = (int)Convert.ChangeType(row.Cells["Gender"].Value, typeof(int));
+                int course = (int)Convert.ChangeType(row.Cells["Course"].Value, typeof(int));
+                int score = (int)Convert.ChangeType(row.Cells["Score"].Value, typeof(int));
 
-                Student student = new Student(name, group, department);
+                Student student = new Student(name, gender, course, score);
 
                 students.Add(student);
             }
@@ -30,17 +31,19 @@ namespace BL
 
         public static void StudentsListToDGV(DataGridView dgv, List<Student> students)
         {
-            dgv.Rows.Clear();
-
+           dgv.Rows.Clear();
             foreach (Student student in students)
             {
                 dgv.Rows.Add();
-
-                DataGridViewRow lastRow = dgv.Rows[dgv.RowCount - 1];
-                lastRow.Cells["InputStudentsDGV_Name"].Value = student.Name;
-                lastRow.Cells["InputStudentsDGV_Group"].Value = student.Group;
-                lastRow.Cells["InputStudentsDGV_Course"].Value = student.Course;
+                DataGridViewRow lastRow = dgv.Rows[dgv.RowCount-1];
+                lastRow.Cells["Name"].Value = student.Name;
+                lastRow.Cells["Gender"].Value = student.Gender;
+                lastRow.Cells["Course"].Value = student.Course;
+                lastRow.Cells["Score"].Value = student.Score;
+               
             }
+            
         }
     }
 }
+

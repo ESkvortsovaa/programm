@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassLibrary1;
+using System.IO;
 namespace _9._1._26F
 {
     public partial class Form1 : Form
@@ -47,42 +48,25 @@ namespace _9._1._26F
             grid.Rows.Add();
         }
 
-        private void save_Click(object sender, EventArgs e)
+        private void openFileDialog1_Click(object sender, EventArgs e)
         {
-            int n = grid.Rows.Count - 1;
-            int m = grid.Columns.Count;
-
-            DoubleArray a = new DoubleArray();
-
-            for (int i = 0; i != n; i++)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                a.Array.Add(new List<int>());
-                for (int j = 0; j != m; j++)
-                {
-                    Console.WriteLine(i + " " + j);
-                    if (grid[j, i].Value != null) a.Array.Last().Add(int.Parse(grid[j, i].Value.ToString()));
-                }
+                string arrText = Files_ReadWrite_Utils.Read(openFileDialog1.FileName);
+                int[,] arr = DoubleArray.StrToArray2D<int>(arrText);
+                DataGridViewUtils.Array2ToGrid(grid, arr);
             }
-            if (save_name.Text.Length < 1)
-            {
-                MessageBox.Show("Введите название");
-                return;
-            }
-            a.Save(save_name.Text);
-            MessageBox.Show("Сохранено");
         }
 
-        private void load_Click(object sender, EventArgs e)
+        private void saveFileDialog1_Click(object sender, EventArgs e)
         {
-            if (load_name.Text.Length < 1)
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Введите название");
-                return;
-            }
-            DoubleArray a = new DoubleArray(load_name.Text);
-            GenerateGridView(a);
-        }
+                string str = textBox1.Text;
 
+                Files_ReadWrite_Utils.Write(saveFileDialog1.FileName, str);
+            }
+        }
         private void execute_26_Click(object sender, EventArgs e)
         {
             List<ClassLibrary1.Point> res = new List<ClassLibrary1.Point>();
